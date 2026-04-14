@@ -7,7 +7,7 @@ import * as THREE from 'three';
 const NODE_COUNT = 40;
 const EDGE_PROB = 0.15;
 
-const NODE_LABELS = ['VMamba', 'NSST', 'Remote Sensing', 'EE', 'raceday.lk', 'DSP', 'PyTorch', 'FPGA'];
+const NODE_LABELS = ['VMamba', 'SSM', 'Remote Sensing', 'EE', 'raceday.lk', 'DSP', 'PyTorch', 'FPGA'];
 
 function NeuralMesh() {
   const groupRef = useRef<THREE.Group>(null!);
@@ -53,7 +53,7 @@ function NeuralMesh() {
       {/* Edges */}
       <lineSegments>
         <bufferGeometry>
-          <bufferAttribute attach="attributes-position" count={linePositions.length / 3} array={linePositions} itemSize={3} />
+          <bufferAttribute args={[linePositions, 3]} attach="attributes-position" />
         </bufferGeometry>
         <lineBasicMaterial color="#4A7FA5" opacity={0.25} transparent />
       </lineSegments>

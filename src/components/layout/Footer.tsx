@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { GitFork, Link as LinkIcon, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -25,7 +25,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-[#4A4840] hover:text-[#4A7FA5] transition-colors"
           >
-            <Github size={16} />
+            <GitFork size={16} />
           </a>
           <a
             href="https://linkedin.com/in/dineth-perera"
@@ -33,7 +33,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-[#4A4840] hover:text-[#4A7FA5] transition-colors"
           >
-            <Linkedin size={16} />
+            <LinkIcon size={16} />
           </a>
           <a
             href="mailto:dp18perera@gmail.com"

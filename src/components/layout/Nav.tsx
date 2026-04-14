@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import { assetPath } from '@/lib/assetPath';
 
 const navLinks = [
   { href: '#about', label: 'ABOUT' },
@@ -96,10 +97,10 @@ export default function Nav() {
           <div className="hidden md:flex items-center gap-4">
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-              <span className="font-mono text-[10px] text-[#8B8578] tracking-widest">AVAILABLE FOR PHD</span>
+              <span className="font-mono text-[10px] text-[#8B8578] tracking-widest">OPEN TO COLLABORATE</span>
             </div>
             <a
-              href="/cv.pdf"
+              href={assetPath('/cv.pdf')}
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono text-xs tracking-widest border border-[#4A7FA5] text-[#4A7FA5] px-4 py-1.5 hover:bg-[#4A7FA5] hover:text-white transition-all duration-200"
@@ -140,7 +141,7 @@ export default function Nav() {
                 {link.label}
               </Link>
             ))}
-            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="mt-4 border border-[#4A7FA5] text-[#4A7FA5] font-mono text-xs tracking-widest px-6 py-2">
+            <a href={assetPath('/cv.pdf')} target="_blank" rel="noopener noreferrer" className="mt-4 border border-[#4A7FA5] text-[#4A7FA5] font-mono text-xs tracking-widest px-6 py-2">
               RESUME
             </a>
           </motion.div>

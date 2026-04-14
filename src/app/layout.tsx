@@ -1,16 +1,23 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+
+export const viewport: Viewport = {
+  themeColor: "#07090F",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   title: "Dineth Perera — EE Researcher & IEEE Author",
   description:
-    "Electrical & Electronic Engineering undergraduate at University of Peradeniya. IEEE IGARSS 2026 author. UrbanMamba. Founder of raceday.lk.",
-  themeColor: "#07090F",
+    "Electrical & Electronic Engineering undergraduate at University of Peradeniya. IEEE IGARSS 2026 author. Mamba-Segmentation. Co-owner of raceday.lk.",
+  metadataBase: new URL("https://dinethperera.com"),
   openGraph: {
     title: "Dineth Perera — EE Researcher & IEEE Author",
     description:
-      "Electrical & Electronic Engineering undergraduate at University of Peradeniya. IEEE IGARSS 2026 author. UrbanMamba. Founder of raceday.lk.",
+      "Electrical & Electronic Engineering undergraduate at University of Peradeniya. IEEE IGARSS 2026 author. Mamba-Segmentation. Co-owner of raceday.lk.",
     images: ["/og-image.png"],
     type: "website",
   },
@@ -18,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dineth Perera — EE Researcher & IEEE Author",
     description:
-      "Electrical & Electronic Engineering undergraduate at University of Peradeniya. IEEE IGARSS 2026 author. UrbanMamba. Founder of raceday.lk.",
+      "Electrical & Electronic Engineering undergraduate at University of Peradeniya. IEEE IGARSS 2026 author. Mamba-Segmentation. Co-owner of raceday.lk.",
     images: ["/og-image.png"],
   },
 };

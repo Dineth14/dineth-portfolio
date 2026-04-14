@@ -71,9 +71,9 @@ function Particles() {
   return (
     <points ref={mesh}>
       <bufferGeometry>
-        <bufferAttribute attach="attributes-position" count={PARTICLE_COUNT} array={positions} itemSize={3} />
-        <bufferAttribute attach="attributes-color" count={PARTICLE_COUNT} array={colors} itemSize={3} />
-        <bufferAttribute attach="attributes-phase" count={PARTICLE_COUNT} array={phases} itemSize={1} />
+        <bufferAttribute args={[positions, 3]} attach="attributes-position" />
+        <bufferAttribute args={[colors, 3]} attach="attributes-color" />
+        <bufferAttribute args={[phases, 1]} attach="attributes-phase" />
       </bufferGeometry>
       <pointsMaterial
         size={1.8}
