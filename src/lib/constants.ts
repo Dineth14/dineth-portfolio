@@ -175,7 +175,7 @@ export const awards = [
   {
     title: "GCE Advanced Level — 3 A's",
     org: "Dharmaraja College, Kandy",
-    year: 2021,
+    year: 2022,
     description:
       "Z-Score: 2.62 | District Rank: 4 | Island Rank: 68 | Physical Science stream.",
     featured: true,
@@ -207,18 +207,10 @@ export const awards = [
   {
     title: "First Year Academic GPA: 3.98 / 4.00",
     org: "University of Peradeniya",
-    year: 2022,
+    year: 2024,
     description:
       "2nd in batch of 456 students. Outstanding first-year performance in EE curriculum.",
     featured: true,
-  },
-  {
-    title: "Cumulative GPA: 3.75 / 4.00",
-    org: "University of Peradeniya",
-    year: 2024,
-    description:
-      "Strong academic standing across EE curriculum including power systems, DSP, embedded systems, and electromagnetics.",
-    featured: false,
   },
   {
     title: "Haxtreme 4.0 — 7th Place",
@@ -250,6 +242,14 @@ export const awards = [
     year: 2025,
     description:
       "Semifinalist with Smart Waste Water Management solution at SLTTECHNOVATION 2025.",
+    featured: false,
+  },
+    {
+    title: "Cumulative GPA: 3.75 / 4.00",
+    org: "University of Peradeniya",
+    year: 2025,
+    description:
+      "Strong academic standing across EE curriculum including power systems, DSP, embedded systems, and electromagnetics.",
     featured: false,
   },
   {

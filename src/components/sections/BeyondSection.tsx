@@ -131,7 +131,7 @@ export default function BeyondSection() {
                     ))}
                   </div>
                   <a
-                    href="https://raceday.lk"
+                    href="https://www.bing.com/ck/a?!&&p=b837b9bae78e21d84574eae3848630ab635c6edc2a2ff740114161de7b28b16aJmltdHM9MTc3NjIxMTIwMA&ptn=3&ver=2&hsh=4&fclid=0edac427-7a3d-679b-117d-d03f7b276601&psq=racedaylk&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9yYWNlZGF5LmxrLw"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 font-mono text-xs tracking-widest border border-red-500 text-red-400 px-6 py-3 hover:bg-red-500/10 transition-all duration-200"
