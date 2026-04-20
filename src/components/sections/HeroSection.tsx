@@ -64,7 +64,7 @@ export default function HeroSection() {
             </motion.h1>
 
             <motion.p variants={itemVariants} className="font-mono text-[#C49A6C] text-sm md:text-base tracking-widest mb-6">
-              Research Engineer · Entrepreneur · Toastmaster
+              Research Assistant · Toastmaster
             </motion.p>
 
             <motion.div variants={itemVariants} className="h-px bg-gradient-to-r from-[#4A7FA5] via-[#C49A6C] to-transparent mb-6 max-w-sm" />
@@ -240,7 +240,7 @@ function StarField() {
             opacity: s.opacity,
             animation: `pulseGlow ${s.dur}s ease-in-out ${s.delay}s infinite`,
           }}
-          />
+        />
       ))}
     </div>
   );
